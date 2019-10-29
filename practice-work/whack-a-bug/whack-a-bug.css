@@ -1,0 +1,90 @@
+/*
+ * CSE 154 Section Exercise - Whack a Bug
+ * Provides styles to the whack-a-bug game.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+body, button {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 10em;
+  text-shadow: black 2px 4px 12px;
+}
+
+h2 {
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+button {
+  border-width: 0;
+  border-radius: 1em;
+  height: 2.5em;
+  width: 5em;
+}
+
+button, p {
+  font-size: 2em;
+}
+
+footer {
+  margin-top: 4em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+footer, #game {
+  background-color: white;
+  color: black;
+}
+
+footer, #game {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+#game {
+  border-radius: 3em;
+}
+
+#bug-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+/* Creates seemingly-random assortment of bug sizes */
+/* The nth-of-type pseudo-selector gets all of the nth children of that tag in some parent */
+#bug-container img:nth-of-type(2n) {
+  width: 5em;
+  height: 5em;
+}
+
+#bug-container img:nth-of-type(2n+1) {
+  width: 15em;
+  height: 15em;
+}
+
+#bug-container img:nth-of-type(3n) {
+  width: 10em;
+  height: 10em;
+}
+
+.hidden {
+  display: none;
+}

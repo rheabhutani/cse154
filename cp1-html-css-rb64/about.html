@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<!--
+  Directions:
+  - Try viewing the page before you make any changes
+  - Look for all the places it say *** TODO: _____ ***
+  - Remove the *** TODO: _____ *** and follow the instructions. i.e. if it says
+    *** TODO: Give the page a title *** do just that, write a title for the page in place of the
+    todo item. Your final submission should not include any TODO comments
+-->
+
+<!--
+  ***
+  Name: Rhea Bhutani
+  Date: September 30, 2019
+  Section: CSE 154 AA
+
+  This is the index.html page for my website. Currently, it has a link to my resume.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Welcome!</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href = "#aboutMe">about me</a>
+          </li>
+          <li>
+            <a href = "#classes">classes</a>
+          </li>
+          <li>
+            <a href = "#favorites">favorites</a>
+          </li>
+          <li>
+            <a href = "#happy">pictures</a>
+          </li>
+          <li>
+            <a href = "#quote">quote</a>
+          </li>
+          <li>
+            <a href = "404.html">extra</a>
+          </li>
+          <li id = "resume">
+            <a href = "resume.html">resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id = "aboutMe">
+        <h1>The (wo)man, the myth, the legend.</h1>
+        <p>
+          Hi! My name is Rhea and I'm a sophomore intending to major in CS (rip). I slept all
+          throughout Spring Break. I'm really looking forward to learning more about web designing!
+        </p>
+      </section>
+
+      <section id = "classes">
+        <h2>Classes I'm currently taking</h2>
+        <ol>
+          <li>CSE 154</li>
+          <li>CSE 414</li>
+          <li>MATH 308</li>
+          <li>PSYCH 210</li>
+        </ol>
+      </section>
+
+      <section id = "favorites">
+        <h2>Five of My Favorite Things</h2>
+
+        <ol>
+          <li><strong>Favorite animal:</strong>
+            <a href = "https://www.shutterstock.com/search/axolotl">
+            Axolotl
+            </a>
+          </li>
+          <li><strong>Favorite food:</strong> 7-Eleven Pizza</li>
+          <li><strong>Favorite TV show:</strong> The Good Place</li>
+          <li><strong>Favorite hobby:</strong> Napping</li>
+          <li aria-label="B Button (Blood Type)"><strong>Favorite Emoji:</strong> 🅱️</li>
+        </ol>
+
+      </section>
+      <section id = "happy">
+        <h3>A picture that represents when I'm happy</h3>
+        <img src="happy.gif" alt="A smiling dog." />
+        <p>This is a gif of a happy dog from <a href = "giphy.com">giphy.com</a></p>
+      </section>
+      <section id = "unhappy">
+        <h3>A picture that represents when I'm sad</h3>
+        <img src="unhappy.gif" alt="Crying but doing a peace sign." id = "sad"/>
+        <p>This is a gif of a crying peace sign from <a href = "tenor.com">tenor.com</a></p>
+      </section>
+
+      <section id = "quote">
+        <h3>One of my favorite quotes</h3>
+        <!--
+          Note: We'll learn about semantic tags more this week, but an article is a good semantic
+          choice here to group the information about a single quote and the author/source. If
+          you want to have multiple quotes, try duplicating this
+          "card UI" structure.
+          -->
+        <article>
+          <blockquote>
+            <p>
+              "You miss 100% of the shots you don't take
+              -Wayne Gretzky"
+            </p>
+            <footer>Michael Scott</footer>
+          </blockquote>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p> Rhea Bhutani 2019.</p>
+    </footer>
+  </body>
+</html>

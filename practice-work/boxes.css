@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#inner-box {
+  border-width: 50px;
+  border-color: pink;
+  border-style: solid;
+  background-color: salmon;
+  height: 200px;
+  width: 200px;
+}
+
+#outer-box {
+  background-color: teal;
+  padding: 50px;
+  height: 300px;
+  width: 300px;
+}

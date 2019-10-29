@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
+
+ /* Makes it so that borders and padding do not add to the overall width and height. */
+ #flower-box, #flower-box > div, #stem, #leaves, #question-box {
+   box-sizing: border-box;
+ }
+
+ #container, #flower-box, #question-box {
+   width: 200px;
+ }
+
+ #flower-box, #leaves, #question-box {
+   border: 4px solid black;
+ }
+
+ #flower-box, #flower-box > div, .eye {
+   border-radius: 50%;
+ }
+
+ #flower-box > div, #stem, #leaves {
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ #flower-box > div, #stem {
+   height: 80px;
+ }
+
+ #container {
+   position: relative; /* Enables z-index */
+   z-index: -2; /* So that the container appears behind everything else. Important for later */
+ }
+
+ #flower-box {
+   height: 120px;
+   background-color: red;
+ }
+
+ #flower-box > div {
+   width: 160px;
+   margin-top: 16px;
+   background-color: white;
+   border: 8px solid yellow;
+
+   display: flex; /* for flex layout of eyes */
+   align-items: center;
+   justify-content: space-evenly;
+ }
+
+ .eye {
+   width: 16px;
+   height: 60%;
+   background-color: black;
+ }
+
+ #stem {
+   width: 50px;
+   margin-top: -4px; /* Moves stem into head a little bit */
+
+   background-color: green;
+   border-left: 4px solid black;
+   border-right: 4px solid black;
+   border-top: 4px solid black;
+ }
+ #leaves {
+   width: 120px;
+   height: 40px;
+   margin-top: -40px; /* Moves the leaves into the stem */
+   z-index: -1; /* Moves the leaves beghind the stem */
+   position: relative; /* Makes z-index functional */
+   background-color: lightgreen;
+ }
+
+ #question-box {
+   height: 200px;
+   background-color: yellow;
+ }
+
+ #question-box p {
+   margin-top: 0px; /* Overrides default margin */
+
+   color: white;
+   text-align: center;
+   font-size: 150px;
+   font-family: Barriecito;
+ }

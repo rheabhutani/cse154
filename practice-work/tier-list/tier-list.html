@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+  CSE 154 Section Exercise - Tier List Maker
+  A website where users can make a customized tier list and add items onto it.
+-->
+
+<html lang="en">
+  <head>
+    <title>Tier List Maker!</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="tier-list.css">
+    <script src="tier-list.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>CSE 154 Tier List Maker!</h1>
+    </header>
+    <main>
+      <section id="setup">
+        <p>
+          With this tier list maker, you too will be able to share your opinions about how some
+          arbitrary group of things stack up against eachother. Select how many tiers you want in
+          your list, and what to call each tier.
+        </p>
+        <fieldset>
+          <legend>Tier List Parameters</legend>
+          <label for="row-count">Number of Rows:</label>
+          <input type="number" id="row-count" value="3" />
+          <div id="row-names">
+            <input type="text"/>
+            <input type="text"/>
+            <input type="text"/>
+          </div>
+        </fieldset>
+        <button id="make-list">Build Tier List!</button>
+      </section>
+      <section id="maker" class="hidden">
+        <div id="tier-list">
+          <!--For reference. Remove the tier-bars when you see fit.-->
+          <div class="tier-row">
+            <p class="tier-name">Top</p>
+            <div class="tier-items">
+              <!-- Images sourced from the Pokemon Company: https://www.pokemon.com/us/pokedex -->
+              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/778.png" alt="Mimikyu" />
+              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="Eevee" />
+              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu" />
+              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png" alt="Ditto" />
+              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/700.png" alt="Syleon" />
+              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png" alt="Snivy">
+            </div>
+          </div>
+          <div class="tier-row">
+            <p class="tier-name">Trash</p>
+            <div class="tier-items">
+              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/569.png" alt="Garbodor" />
+            </div>
+          </div>
+        </div>
+        <fieldset>
+          <legend>Item Parameters</legend>
+          <label for="tier-select">Tier:</label>
+          <select id="tier-select"><!--Fill options in JS--></select>
+          <label for="item-image">Image URL:</label>
+          <input type="text" id="item-image" />
+          <label for="item-name">Item Name</label>
+          <input type="text" id="item-name" />
+        </fieldset>
+        <button id="add-item">Add Item!</button>
+        <button id="go-back">Discard Tier List</button>
+      </section>
+    </main>
+  </body>
+</html>

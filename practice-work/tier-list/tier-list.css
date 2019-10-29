@@ -1,0 +1,116 @@
+/*
+ * CSE 154 Section Exercise - Tier List Maker
+ * Defines the styles for laying out the tier list website and the list itself.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  background-color: #4b2e83;
+  color: white;
+  text-align: center;
+}
+
+body, button {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  text-shadow: black 2px 4px 8px;
+}
+
+fieldset {
+  border-color: #85754d;
+  border-style: solid;
+}
+
+fieldset label {
+  color: black;
+}
+
+legend {
+  background-color: #85754d;
+}
+
+button {
+  border-width: 0;
+  border-radius: 2em;
+  font-size: 1.75em;
+  margin: 1em;
+  background-color: white;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: white 0 0 10px;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+#setup > p, .tier-name {
+  font-size: 2em;
+}
+
+#setup > p, #setup fieldset, #setup input[type="text"] {
+  width: 50%;
+}
+
+#setup > p, #setup fieldset, #setup input[type="text"], #maker {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#setup input[type="text"] {
+  margin-top: 8px;
+  display: block;
+}
+
+#maker {
+  width: 85%;
+}
+
+#tier-list {
+  border: 5px solid white;
+  border-bottom-width: 0;
+  margin: 10px;
+}
+
+.tier-row {
+  padding: 5px;
+  background-color: #2a194a;
+  border-bottom: 5px solid white;
+}
+
+.tier-row, .tier-items {
+  display: flex;
+  align-items: center;
+}
+
+.tier-name {
+  flex-basis: 15%;
+}
+
+.tier-items {
+  flex-basis: 85%;
+  min-height: 120px;
+  justify-content: start;
+  flex-flow: row wrap;
+  border-left: 5px dashed white;
+  padding-left: 10px;
+}
+
+.tier-items img {
+  width: auto;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid #85754d;
+}
+
+.tier-items img, fieldset {
+  background-color: #b7a57a;
+}
+
+.hidden {
+  display: none;
+}

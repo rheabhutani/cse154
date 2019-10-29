@@ -1,0 +1,119 @@
+/*
+  Name: Rhea Bhutani
+  Date: October 13, 2019
+  Section: CSE 154 AA
+
+  This is the stylesheet containing the required set rules for the
+  webpage. All the style rules in the file provide the webpage a
+  consistent look and feel.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+html {
+  text-align: center;
+  background: linear-gradient(-90deg, #e8fbff 35%, rgba(0, 0, 0, 0) 30%);
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  margin: auto auto;
+  overflow: auto;
+  width: 70%;
+}
+
+#task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+#task > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  width: 50%;
+  padding: 7px;
+  border: 1px solid darkgray;
+}
+
+input:focus {
+  border: 1px solid black;
+}
+
+button {
+  margin-top: 15px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.4s;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+#list {
+  text-align: left;
+  margin: 0;
+  padding: 20px;
+}
+
+span {
+  float: left;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 17px;
+  transition: 0.2s;
+  user-select: none;
+}
+
+span:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+span:hover {
+  background: #ddd;
+}
+
+span.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+span.checked:before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+#addBtn {
+  padding: 10px;
+  width: 25%;
+  float: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  background-color: #bbb;
+}

@@ -1,0 +1,148 @@
+/*
+  Name: Rhea Bhutani
+  Date: October 9, 2019
+  Section: CSE 154 AA
+
+  This is the stylesheet containing the required set rules for the
+  webpage. All the style rules in the file from the spec provide
+  the webpage a consistent look and feel.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700|Space+Mono&display=swap');
+
+body {
+  width: 80%;
+  margin: auto auto;
+  overflow: auto;
+  background-color: #FEE8C8;
+  background-image: url("img/dog-footprint.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: 'Space Mono', monospace;
+}
+
+h1, h2, h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+}
+
+h1, #endorsements, body > footer {
+  background-color: #34485E;
+  color: #EBEDEF;
+}
+
+a {
+  color: midnightblue;
+}
+
+a:visited {
+  color: #866637;
+}
+
+main, #endorsements blockquote {
+  background-color: #EBEDEF;
+  color: #34485E;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 1.6em;
+}
+
+header {
+  height: 350px;
+  background-image: url("img/header-background.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+header, header > h1 {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+header > h1 {
+  font-size: 3.1em;
+  padding: 10px;
+}
+
+#profile-pic > img {
+  width: 300px;
+  height: 100%;
+  border: 10px solid white;
+  border-radius: 200px;
+}
+
+#profile-pic {
+  padding-top: 3%;
+  padding-left: 75%;
+}
+
+body > footer {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer > p {
+  font-size: 1vw;
+  text-align: center;
+}
+
+footer img {
+  height: 70px;
+  position: relative;
+  margin-right: 10px;
+}
+
+main {
+  margin-top: 8%;
+  margin-bottom: 4%;
+  border-radius: 5px;
+}
+
+main > section {
+  padding: 1% 2%;
+}
+
+#background p {
+  margin: 10px;
+}
+
+#facts {
+  border-top: 5px solid #34485E;
+  border-bottom: 5px solid #34485E;
+}
+
+#facts > img {
+  width: 300px;
+  height: 100%;
+  margin: 10px 5px 0px 10px;
+}
+
+#endorsements img {
+  width: 30vw;
+  max-width: 400px;
+  /* height: 100%; */
+}
+
+#endorsements blockquote {
+  text-align: center;
+  border-left: 10px solid #AEB6BF;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  padding: 10px;
+}
+
+blockquote > hr {
+  width: 40%;
+}
+
+blockquote > cite {
+  font-style: italic;
+}
+
+.side-by-side {
+  display: flex;
+}

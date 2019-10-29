@@ -1,0 +1,49 @@
+/*
+  Name: Rhea Bhutani
+  Date: October 9, 2019
+  Section: CSE 154 AA
+
+  This stylesheet is for the creative section of the
+  webpage, with all unique style rules. This file is
+  used for only the creative section, and gives the
+  entire section a consistent look.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+#creative {
+  display: block;
+  align-items: center;
+  padding: 20px;
+  background: #9C8792;
+  height: auto;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+figcaption {
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#creative img {
+  border-radius: 50px;
+  border: 5px solid white;
+  margin: 0 auto;
+}
+
+#creative img:hover {
+  transform: scaleX(-1);
+}
+
+.creative-para {
+  text-align: justify;
+}
+
+#creative-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

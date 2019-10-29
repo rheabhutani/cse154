@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+  CSE 154 Section Exercise - Whack a Bug
+  This page has an introduction to a game about whacking bugs, parameters for that game,
+  and a game view where bugs spawn periodically and must be clicked for score.
+-->
+
+<html lang="en">
+  <head>
+    <title>Whack a Bug!</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="whack-a-bug.css">
+    <script src="whack.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Whack a Bug!</h1>
+    </header>
+    <section id="introduction">
+      <h2>How to Play</h2>
+      <p>
+        The bugs won't stop coming! We've only got a one minute window. Whack as many as you
+        can within the time limit. The fate of all code rest on your shoulders!<br />
+        (Disclaimer: Bugs are nice, don't hurt bugs!)
+      </p>
+      <fieldset>
+        <legend>Game Parameters</legend>
+        <label for="spawn-rate">Miliseconds between spawns:</label>
+        <input id="spawn-rate" type="number" value="1000" />
+        <label for="spawn-count">Number to spawn at a time:</label>
+        <input id="spawn-count" type="number" value="1" />
+        <label for="despawn-rate">Miliseconds before bug despawns:</label>
+        <input id="despawn-rate" type="number" value="2500" />
+      </fieldset>
+      <p id="error"></p>
+      <button id="start">Start!</button>
+    </section>
+    <section id="game" class="hidden">
+      <p>You have whacked <span id="score">0</span> bugs!</p>
+      <p><span id="timer"></span> seconds remain!</p>
+      <div id="bug-container">
+        <!-- Here for reference -->
+        <img src="bug.png" alt="An ant-like bug" />
+      </div>
+    </section>
+    <footer>
+      <p>Page and assets &copy; Sven Hansen</p>
+    </footer>
+  </body>
+</html>

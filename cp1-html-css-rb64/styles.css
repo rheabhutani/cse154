@@ -1,0 +1,209 @@
+/*
+  Name: Rhea Bhutani
+  Date: September 30, 2019
+  Section: CSE 154 AA
+
+  This is the stylesheet for all the pages to give them a consistent look and feel.
+*/
+
+/*
+  Remember: This body ruleset is to get you started, but does not count
+  towards the CP requirements!
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding-top: 10px;
+  background-color: black;
+  font-size: 50px;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+header li {
+  display: inline;
+  margin: 10px;
+  background-color: black;
+}
+
+nav {
+  font-size: 15px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: black;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+#resume {
+  margin-top: 10px;
+  padding-right: 100px;
+  float: inherit;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #54ff90;
+}
+
+section li {
+  padding: 20px;
+  text-align: center;
+}
+
+section h2 {
+  padding-top: 150px;
+}
+
+section h1 {
+  padding-top: 150px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+section h3 {
+  padding-top: 100px;
+}
+
+#aboutMe {
+  height: 100vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  background-attachment: fixed;
+  /* Photo by Josephine Bredehoft on Unsplash */
+  background-image: url("about_me.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+#classes {
+  height: 100vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50;
+  background-attachment: fixed;
+  /* Photo by Trung Pham Quoc on Unsplash */
+  background-image: url("classes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+#favorites {
+  height: 100vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50;
+  background-attachment: fixed;
+  /* Photo by Hemant Latawa on Unsplash */
+  background-image: url("favorites.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+#happy {
+  height: 100vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50;
+  background-attachment: fixed;
+  /* Photo by Edu Lauton on Unsplash */
+  background-image: url("happy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+#unhappy {
+  height: 100vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50;
+  background-attachment: fixed;
+  /* Photo by Philippe Mignot on Unsplash */
+  background-image: url("unhappy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+#quote {
+  height: 100vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50;
+  background-attachment: fixed;
+  /* Photo by Pablo Varela on Unsplash */
+  background-image: url("quote.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  padding-top: 150px;
+}
+
+#sad {
+  height: 50%;
+}
+
+#error {
+  height: 100vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50;
+  background-attachment: fixed;
+  /* Photo by Matthew Henry on Unsplash */
+  background-image: url("404.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  padding-top: 200px;
+}
+
+.resume {
+  text-align: center;
+  font-size: 25px;
+}
+
+.resume li {
+  font-size: 15px;
+}
+
+#cv {
+  font-size: 23px;
+  padding-top: none;
+}
+
+#cv h4 {
+  font-size: 20px;
+}
+
+#cv li {
+  font-size: 17px;
+}
+
+#cv h2 {
+  padding-top: 15px;
+}
