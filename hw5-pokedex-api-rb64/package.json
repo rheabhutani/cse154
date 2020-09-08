@@ -1,0 +1,22 @@
+{
+  "name": "hw5-pokedex-api-rb64",
+  "version": "1.0.0",
+  "description": "*Special thanks to Whitaker Brand and Melissa Hovik for the original version of this assignment. Additional thanks to Tal Wolman and Jack Venberg for the adaptation of this assignment into Node.js*",
+  "main": "pokedex.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.cs.washington.edu:cse154-19au-students/hw5-pokedex-api-rb64.git"
+  },
+  "author": "Rhea Bhutani",
+  "license": "ISC"
+}

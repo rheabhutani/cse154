@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+  NAME: Rhea Bhutani
+  DATE: November 13, 2019
+  SECTION/TA NAME: CSE 154 AA
+
+  This is the main html code for my Creative Project 4, which is a website for
+  calculating the area or the perimeter for the shape chosen by the user.
+-->
+
+<html lang = "en">
+  <head>
+    <title>Calculator for Shapes</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css"  />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>A Calculator for Shapes!</h1>
+    <section id="choose">
+      <h2>Choose a shape</h2>
+      <section id="shapes">
+        <div id="circle" class="shape"></div>
+        <div id="rectangle" class="shape"></div>
+        <div id="triangle" class="shape"></div>
+      </section>
+    </section>
+    <section id="values" class="hidden">
+      <h2>Enter the dimensions</h2>
+    </section>
+    <section id="answer-section" class="hidden">
+      <p id="answer"></p>
+    </section>
+  </body>
+</html>

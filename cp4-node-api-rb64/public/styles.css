@@ -1,0 +1,90 @@
+/*
+  NAME: Rhea Bhutani
+  DATE: November 13, 2019
+  SECTION/TA: CSE 154 AA
+
+  This stylesheet is for my Creative Project 4, which is a website for
+  calculating the area or the perimeter for the shape chosen by the user.
+  This stylesheet gives the entire wensite a consistent look, with the same
+  feel across all the views.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body {
+  margin: auto auto;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#rectangle, #circle {
+  height: 10em;
+  background-color: red;
+}
+
+#rectangle {
+  width: 20em;
+}
+
+#circle {
+  width: 10em;
+  border-radius: 50%;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 5em solid transparent;
+  border-right: 5em solid transparent;
+  border-bottom: 10em solid red;
+}
+
+#shapes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1em ridge #bfbfbf;
+  padding: 2.5em;
+  margin: 2.5em;
+  border-radius: 1em;
+}
+
+#shapes, .button {
+  background-color: black;
+}
+
+#values p {
+  font-size: 1em;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2em;
+}
+
+.button {
+  transition-duration: 0.3s;
+  color: white;
+  padding: 1em;
+  width: 25%;
+  display: inline-block;
+  margin: 4em;
+}
+
+.button, .shape {
+  cursor: pointer;
+}
+
+.button:hover {
+  color: black;
+}
+
+.button:hover, body, input {
+  background-color: yellow;
+}
